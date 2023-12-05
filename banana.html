@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, orientation=landscape">
+    <title>banana</title>
+    <style>
+        body {
+            background-color: black;
+            margin:0;
+        }
+        @media(orientation: portrait){ 
+            video{
+                transform: rotate(90deg);
+                transform-origin: top right;
+                width:100vh;
+                height:100vw;
+                right:0;
+                top:100%;
+                position:absolute;
+            }
+        }
+    </style>
+</head>
+<body>
+    <video width="100%" height="100%" autoplay muted loop>
+        <source src="mov/banana.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
